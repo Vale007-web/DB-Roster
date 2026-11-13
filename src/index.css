@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url('../public/wallpaper.jpg') center / cover fixed no-repeat;
+}
+
+:root {
+  --roster-green: #176b54;
+  --roster-green-dark: #125744;
+  --roster-green-border: rgba(23, 107, 84, 0.55);
+}
+
+.navbar-glass {
+  background-color: rgba(15, 55, 48, 0.82);
+}
+
+.card {
+  --bs-card-bg: rgba(255, 255, 255, 0.55);
+}
+
+.bg-light {
+  --bs-bg-opacity: 0.55;
+}
+
+.card,
+.bg-light,
+.navbar-glass {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.btn-roster {
+  color: #fff;
+  background-color: var(--roster-green);
+  border-color: var(--roster-green);
+}
+
+.btn-roster:hover {
+  color: #fff;
+  background-color: var(--roster-green-dark);
+  border-color: var(--roster-green-dark);
+}
+
+.btn-roster:focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(23, 107, 84, 0.35);
+}
+
+.btn-stage {
+  color: #164b3d;
+  background-color: rgba(216, 247, 233, 0.88);
+  border-color: var(--roster-green-border);
+}
+
+.roster-select {
+  color: #164b3d;
+  background-color: rgba(232, 250, 240, 0.9);
+  border-color: var(--roster-green-border);
+}
+
+.roster-select:focus {
+  border-color: var(--roster-green);
+  box-shadow: 0 0 0 0.25rem rgba(23, 107, 84, 0.2);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
